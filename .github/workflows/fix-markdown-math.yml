@@ -1,0 +1,50 @@
+name: Auto-Fix Markdown Math Delimiters
+
+on:
+  push:
+    branches:
+      - main     # Triggers whenever you push directly to main
+  pull_request:
+    branches:
+      - main     # Triggers when someone opens a pull request
+
+jobs:
+  clean-syntax:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Crucial: Gives the bot permission to push fixes back
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          # Fetch full history so we can push back updates safely
+          fetch-depth: 0
+
+      - name: Sanitize and Replace Math Delimiters
+        run: |
+          echo "Scanning workspace for markdown files..."
+          
+          # 1. Convert block math \... \ or \... \ to .........
+          find . -type f -name "*.md" -exec sed -i -E 's/\\/$$/g;s//\\/g; s/\\/$$/g;s//\\/g'  +
+          
+          # 2. Convert raw line breaks inside table matrices to clean math notations
+          find . -type f -name "*.md" -exec sed -i -E 's/\\\\\\\\/\\\\/g'  +
+          
+          # 3. Convert inline math \... \ or ......... to single .........
+          find . -type f -name "*.md" -exec sed -i -E 's/\\\\\(/\/g; s/\\\\\)/\/g; s/\\([ ]+)([^{\,}\\]+)\\([]+)/\\1\/g'  +
+
+      - name: Commit and Push Changes
+        run: |
+          # Configure a secure system GitHub bot identity
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@://github.com'
+          
+          # Check if any alterations were made by sed
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "Changes detected! Committing repaired files..."
+            git commit -am "style: automated fix for GitHub Markdown math delimiters"
+            git push
+          else
+            echo "All markdown files are already perfectly formatted. No actions needed."
+          fi
