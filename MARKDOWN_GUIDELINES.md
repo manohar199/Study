@@ -1,6 +1,7 @@
 # Repository Markdown and KaTeX Standards
 
-This repository uses clean Markdown and KaTeX syntax for all notes and study files.
+This repository uses clean Markdown and KaTeX syntax for all notes and study files on the `main` branch.
+This policy applies to the current branch and to every future uploaded file.
 
 ## Required rules for all future uploads
 
@@ -31,6 +32,10 @@ This repository uses clean Markdown and KaTeX syntax for all notes and study fil
    - Avoid broken code fences or unclosed backticks.
    - Do not leave trailing whitespace on a line.
 
+7. Apply this standard to the `main` branch only.
+   - Any file uploaded to `main` must be checked before final submission.
+   - Future notes must follow these rules automatically.
+
 ## Correct examples
 
 ```markdown
@@ -60,5 +65,6 @@ These patterns are invalid for this repository and should never be uploaded agai
 - No broken tables or lists
 - No duplicate escaping
 - File names and directories are clean and consistent
+- The file follows `main` branch standards before upload
 
-This standard applies to every future uploaded file in the repository.
+This standard applies to every future uploaded file in the repository main branch.
