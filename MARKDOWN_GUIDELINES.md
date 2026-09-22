@@ -12,7 +12,8 @@ This policy applies to the current branch and to every future uploaded file.
 
 2. Use KaTeX in the source form that renders correctly in GitHub-style preview tools.
 
-   - Use `\(...\)` for inline math.
+   - Inline math: use $...$
+   - Display math: use $$...$$.
    - Use `\[...\]` for display math.
    - Do not use escaped backslashes in source, such as `\\(`, `\\[`, `\\)`, or `\\]`.
    - Do not mix raw HTML with math for normal note content.
