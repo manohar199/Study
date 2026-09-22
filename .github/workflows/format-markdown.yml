@@ -1,0 +1,69 @@
+name: Format and validate Markdown/LaTeX
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**/*.md'
+      - '.markdownlint.json'
+      - '.prettierrc.json'
+      - 'scripts/*.mjs'
+      - '.github/workflows/format-markdown.yml'
+  pull_request:
+    paths:
+      - '**/*.md'
+      - '.markdownlint.json'
+      - '.prettierrc.json'
+      - 'scripts/*.mjs'
+      - '.github/workflows/format-markdown.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: format-markdown-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  format-and-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Normalize Pandoc LaTeX math
+        run: node scripts/normalize-markdown-math.mjs
+
+      - name: Format Markdown
+        run: npx --yes prettier@3.5.3 --write '**/*.md'
+
+      - name: Apply Markdown fixes
+        run: npx --yes markdownlint-cli2@0.17.2 --fix '**/*.md'
+
+      - name: Validate Markdown and LaTeX delimiters
+        run: node scripts/validate-markdown-latex.mjs
+
+      - name: Check formatting on pull requests
+        if: github.event_name == 'pull_request'
+        run: git diff --exit-code
+
+      - name: Commit formatting fixes on main
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+        run: |
+          if git diff --quiet; then
+            echo "No Markdown formatting changes are needed."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- '*.md'
+          git commit -m "chore: normalize Markdown and LaTeX formatting [skip ci]"
+          git push
