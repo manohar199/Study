@@ -119,7 +119,7 @@ While H.C. Verma Vol 1 and Vol 2 cover **~92% of the APPSC IPO Physics Syllabus*
 1. **Topic 1 (Units & Dimensions):** Specific S.I. formatting/grammatical rules (e.g., capitalization, pluralization, punctuation) and explicit lists of advantages of SI units.
 2. **Topic 7 (Heat & Thermodynamics):** Explicit distinction between specific gas constant \(r\) and universal gas constant \(R\).
 3. **Topic 8 (Sound):** Noise Pollution causes/methods of abatement, detailed Sabine’s Formula for reverberation time \(T = \frac{0.161V}{A}\), and explicit conditions for a good auditorium.
-4. **Topic 11 (Modern Physics):** Fiber optics classification (Step-index vs. Graded-index, Single-mode vs. Multi-mode), Superconductivity (Meissner effect, Type I/Type II, BCS theory overview), and Nanotechnology fundamentals.
+4. **Topic 11 (Modern Physics):** Fiber optics classification (Step-index vs. Graded-index, Single-mode vs. Multi-mode), Superconductivity (Meissner effect, Type I/Type II, BCS theory overview), and Nanotechnology basics.
 
 ---
 
