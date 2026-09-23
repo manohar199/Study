@@ -44,9 +44,9 @@ The official APPSC syllabus serves as our **controlling structure**. We follow t
 
 - **Topic 7: Heat and Thermodynamics**
   - **Subtopic 7.1:** Expansion of Gases, Boyle’s Law, Absolute scale of temperature, Charles’s Laws
-  - **Subtopic 7.2:** Ideal Gas Equation, Universal Gas Constant (\(R\)), Difference between Gas Constant (\(r\)) and Universal Gas Constant (\(R\))
+  - **Subtopic 7.2:** Ideal Gas Equation, Universal Gas Constant \(R\), Difference between Gas Constant \(r\) and Universal Gas Constant \(R\)
   - **Subtopic 7.3:** Isothermal and Adiabatic processes, Laws of Thermodynamics
-  - **Subtopic 7.4:** Specific heats, Molar specific heats of a gas (\(C_p, C_v\))
+  - **Subtopic 7.4:** Specific heats, Molar specific heats of a gas \(C_p, C_v\)
   - **Subtopic 7.5:** Modes of Heat Transmission, Laws of thermal conductivity, Coefficient of thermal conductivity, Problems
 
 - **Topic 8: Sound**
@@ -57,14 +57,14 @@ The official APPSC syllabus serves as our **controlling structure**. We follow t
 
 - **Topic 9: Properties of Matter**
   - **Subtopic 9.1:** Elasticity: Stress, Strain, Units & Dimensions, Hooke’s Law
-  - **Subtopic 9.2:** Modulii of Elasticity: Young’s (\(Y\)), Bulk (\(K\)), Rigidity (\(\eta\)), Poisson’s ratio (\(\sigma\)), Interrelations (equations only)
+  - **Subtopic 9.2:** Moduli of Elasticity: Young’s \(Y\), Bulk \(K\), Rigidity \(\eta\), Poisson’s ratio \(\sigma\), Interrelations (equations only)
   - **Subtopic 9.3:** Surface Tension: Molecular theory, Angle of contact, Capillarity & formula, Examples
-  - **Subtopic 9.4:** Viscosity: Newton’s law of viscous force, Coefficient of viscosity (\(\eta\)), Effect of temperature on viscosity, Poiseuille’s equation, Problems
+  - **Subtopic 9.4:** Viscosity: Newton’s law of viscous force, Coefficient of viscosity \(\eta\), Effect of temperature on viscosity, Poiseuille’s equation, Problems
 
 - **Topic 10: Electricity & Magnetism**
   - **Subtopic 10.1:** Ohm’s Law, Specific Resistance, Kirchhoff’s Laws, Wheatstone Bridge, Meter Bridge
   - **Subtopic 10.2:** Magnetism: Coulomb’s Inverse Square Law, Magnetic field, Lines of force
-  - **Subtopic 10.3:** Magnetic Induction Field Strength (\(B\)): Field on Axial line and Equatorial line of a bar magnet, Problems
+  - **Subtopic 10.3:** Magnetic Induction Field Strength \(B\): Field on Axial line and Equatorial line of a bar magnet, Problems
 
 - **Topic 11: Modern Physics**
   - **Subtopic 11.1:** Photoelectric Effect: Einstein’s equation, Laws, Photoelectric cell & applications
@@ -101,7 +101,7 @@ The official APPSC syllabus serves as our **controlling structure**. We follow t
 | **7** | **Heat & Thermodynamics** | Specific heats (\(C_p, C_v\)), Thermal Conductivity | Vol 2 | Ch 27, 28 | Ch 27.1–27.2, Ch 28.1–28.4 |
 | **8** | **Sound** | Wave Motion, Musical Sound, Beats, Doppler Effect, Echo | Vol 1 | Ch 15, 16 | Ch 15.1–15.4, Ch 16.1–16.3, Ch 16.11, 16.13 |
 | **8** | **Sound** | Noise Pollution, Sabine’s Formula, Auditorium Acoustics | Vol 1 | Ch 16 | Sec 16.16 |
-| **9** | **Properties of Matter** | Elasticity, Hooke’s Law, Modulii Relations (\(Y, K, \eta, \sigma\)) | Vol 1 | Ch 14 | Sec 14.2–14.6 |
+| **9** | **Properties of Matter** | Elasticity, Hooke’s Law, Moduli Relations (\(Y, K, \eta, \sigma\)) | Vol 1 | Ch 14 | Sec 14.2–14.6 |
 | **9** | **Properties of Matter** | Surface Tension, Angle of Contact, Capillarity | Vol 1 | Ch 14 | Sec 14.9–14.14 |
 | **9** | **Properties of Matter** | Viscosity, Newton’s formula, Temperature effect, Poiseuille’s equation | Vol 1 | Ch 14 | Sec 14.15–14.16 |
 | **10** | **Electricity & Magnetism** | Ohm’s Law, Specific Resistance, Kirchhoff’s Laws, Bridges | Vol 2 | Ch 32, 33 | Ch 32.1–32.6, Ch 33.1–33.3 |
@@ -114,12 +114,12 @@ The official APPSC syllabus serves as our **controlling structure**. We follow t
 
 #### 3. Source Gap Analysis & Additional Material Required
 
-While H.C. Verma Vol 1 and Vol 2 cover **~92% of the APPSC IPO Physics Syllabus**, the following specific syllabus items are **partially covered or not covered in H.C. Verma** and require supplementary material.
+While H.C. Verma Vol 1 and Vol 2 cover **~92% of the APPSC IPO Physics Syllabus**, the following specific syllabus items are **partially covered or not covered in H.C. Verma** and require supplementary material:
 
 1. **Topic 1 (Units & Dimensions):** Specific S.I. formatting/grammatical rules (e.g., capitalization, pluralization, punctuation) and explicit lists of advantages of SI units.
-2. **Topic 7 (Heat & Thermodynamics):** Explicit distinction between specific gas constant (\(r\)) and universal gas constant (\(R\)).
-3. **Topic 8 (Sound):** Noise Pollution causes/methods of abatement, detailed Sabine’s Formula for reverberation time (\(T = \frac{0.161V}{A}\)), and explicit conditions for a good auditorium.
-4. **Topic 11 (Modern Physics):** Fiber optics classification (Step-index vs. Graded-index, Single-mode vs. Multi-mode), Superconductivity (Meissner effect, Type I/Type II, BCS theory overview), and Nanotechnology basics.
+2. **Topic 7 (Heat & Thermodynamics):** Explicit distinction between specific gas constant \(r\) and universal gas constant \(R\).
+3. **Topic 8 (Sound):** Noise Pollution causes/methods of abatement, detailed Sabine’s Formula for reverberation time \(T = \frac{0.161V}{A}\), and explicit conditions for a good auditorium.
+4. **Topic 11 (Modern Physics):** Fiber optics classification (Step-index vs. Graded-index, Single-mode vs. Multi-mode), Superconductivity (Meissner effect, Type I/Type II, BCS theory overview), and Nanotechnology fundamentals.
 
 ---
 
