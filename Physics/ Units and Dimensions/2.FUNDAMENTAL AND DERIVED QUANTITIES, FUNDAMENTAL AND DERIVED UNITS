@@ -1,0 +1,277 @@
+### EVALUATION & SOLUTION OF ACTIVE RECALL QUESTION 1.1
+
+1. **Shape of \\(n\\) vs. \\(u\\) Graph:** Rectangular Hyperbola [33–35, 56–57]. Since \\(n \cdot u = \text{Constant}\\), as the unit size \\(u\\) increases, the numerical value \\(n\\) decreases non-linearly [33–35, 56–57].
+2. **Slope of \\(n\\) vs. \\(\frac{1}{u}\\) Graph:** A straight line passing through the origin [33–35]. The equation is \\(n = Q \cdot \left(\frac{1}{u}\right)\\), so the slope represents the invariant physical magnitude \\(Q\\) [33–35].
+3. **Examples:**
+   * **Dimensionless but has a unit:** Plane Angle (unit: Radian) or Solid Angle (unit: Steradian).
+   * **Dimensionless and Unitless:** Specific Gravity (Relative Density), Refractive Index, Strain, or Mechanical Advantage [53–54, 58].
+
+---
+
+### SUBTOPIC 1.2: FUNDAMENTAL AND DERIVED QUANTITIES, FUNDAMENTAL AND DERIVED UNITS
+
+---
+
+#### 1. Concept
+In physics, we encounter hundreds of measurable physical quantities. However, these quantities are not all independent of one another. For example, speed is calculated by dividing distance by time, and area is obtained by multiplying length by breadth. 
+
+To build a logical, non-redundant system of measurement, physicists define a minimal set of independent physical quantities called **Fundamental (or Base) Quantities** [20–22]. All other physical quantities can then be expressed as mathematical combinations (multiplication and division) of these fundamental quantities; these are known as **Derived Quantities** [20–21].
+
+The corresponding units assigned to fundamental quantities are **Fundamental (Base) Units**, while the units derived from them are **Derived Units**.
+
+---
+
+#### 2. Definition
+* **Fundamental (Base) Quantities:** A set of physical quantities that are mutually independent of one another and cannot be defined or expressed in terms of any other physical quantity [20–21].
+* **Derived Quantities:** Physical quantities whose definitions depend on one or more fundamental quantities and can be expressed algebraically in terms of base quantities [20–21].
+* **Fundamental (Base) Units:** The standard, internationally accepted units defined for measuring fundamental quantities.
+* **Derived Units:** Units of measurement for derived quantities obtained by combining fundamental units according to the physical equations defining those quantities.
+* **Supplementary Quantities/Units:** Purely geometrical quantities (Plane Angle and Solid Angle) defined in the International System (SI) to complement the base quantities.
+
+---
+
+#### 3. Physical Meaning
+The choice of fundamental quantities is a matter of convention, but the minimum number required to cover all of physics is **seven** [21–22]. 
+
+For example, length and time could be chosen as base quantities, making speed a derived quantity (\\(\text{Speed} = \frac{\text{Length}}{\text{Time}}\\)) [20–21]. Alternatively, one could theoretically choose speed and time as fundamental quantities, making length a derived quantity (\\(\text{Length} = \text{Speed} \times \text{Time}\\)). The International System of Units (SI) established a standardized framework to ensure global scientific consistency.
+
+---
+
+#### 4. Law / Principle
+1. **Principle of Mutual Independence:** No fundamental quantity in a given system of units can be dimensionally represented or derived from the remaining fundamental quantities. The dimension of a base quantity in terms of other base quantities is always zero.
+2. **Principle of Dimensional Completeness:** Any derived physical quantity \\(Q\\) can be expressed as a unique product of powers of the base quantities:
+\\[Q = M^a L^b T^c I^d K^e (\text{mol})^f (\text{cd})^g\\]
+
+---
+
+#### 5. Equation
+For a derived physical quantity \\(Q\\) expressed in terms of SI base units:
+\\[u_{\text{derived}} = \text{kg}^a \cdot \text{m}^b \cdot \text{s}^c \cdot \text{A}^d \cdot \text{K}^e \cdot \text{mol}^f \cdot \text{cd}^g\\]
+
+Where \\(a, b, c, d, e, f, g\\) are real numbers (exponents) representing the dimensions of the quantity [28–30].
+
+---
+
+#### 6. Derivation: Step-by-Step Expression of Derived Units from Base Units
+
+##### **A. Force (Newton):**
+\\[\text{Force} = \text{Mass} \times \text{Acceleration} = \text{Mass} \times \frac{\text{Velocity}}{\text{Time}} = \text{Mass} \times \frac{\text{Length}}{\text{Time}^2}\\] [28–29]
+\\[\text{SI Unit of Force} = \text{kg} \cdot \text{m} \cdot \text{s}^{-2} \equiv \text{Newton (N)}\\] [28–29, 194]
+
+##### **B. Work / Energy (Joule):**
+\\[\text{Work} = \text{Force} \times \text{Displacement} = (\text{Mass} \times \text{Length} \times \text{Time}^{-2}) \times \text{Length} = \text{Mass} \times \text{Length}^2 \times \text{Time}^{-2}\\]
+\\[\text{SI Unit of Work} = \text{kg} \cdot \text{m}^2 \cdot \text{s}^{-2} \equiv \text{Joule (J)}\\]
+
+##### **C. Pressure (Pascal):**
+\\[\text{Pressure} = \frac{\text{Force}}{\text{Area}} = \frac{\text{Mass} \times \text{Length} \times \text{Time}^{-2}}{\text{Length}^2} = \text{Mass} \times \text{Length}^{-1} \times \text{Time}^{-2}\\]
+\\[\text{SI Unit of Pressure} = \text{kg} \cdot \text{m}^{-1} \cdot \text{s}^{-2} \equiv \text{Pascal (Pa)}\\] [35–36, 196]
+
+---
+
+#### 7. Meaning of Variables
+* \\(M, L, T, I, K, \text{mol}, \text{cd}\\): Representation symbols for Mass, Length, Time, Electric Current, Thermodynamic Temperature, Amount of Substance, and Luminous Intensity respectively.
+* \\(a, b, c, d, e, f, g\\): Dimensional exponents (powers).
+
+---
+
+#### 8. Official SI Base & Supplementary Units Table
+
+##### **A. Seven Fundamental (Base) SI Quantities & Units**
+
+| Base Quantity | SI Unit Name | Symbol | Dimension Symbol | Definition Anchor Constant (CGPM 2018/2019) |
+| :--- | :--- | :--- | :--- | :--- |
+| **Length** | metre | \\(\text{m}\\) | \\([L]\\) | Speed of light in vacuum \\(c = 299,792,458\text{ m s}^{-1}\\) |
+| **Mass** | kilogram | \\(\text{kg}\\) | \\([M]\\) | Planck's constant \\(h = 6.62607015 \times 10^{-34}\text{ J s}\\) |
+| **Time** | second | \\(\text{s}\\) | \\([T]\\) | Caesium-133 hyperfine transition \\(\Delta\nu_{\text{Cs}} = 9,192,631,770\text{ Hz}\\) |
+| **Electric Current** | ampere | \\(\text{A}\\) | \\([I]\\) | Elementary charge \\(e = 1.602176634 \times 10^{-19}\text{ C}\\) |
+| **Thermodynamic Temperature** | kelvin | \\(\text{K}\\) | \\([K]\\) | Boltzmann constant \\(k = 1.380649 \times 10^{-23}\text{ J K}^{-1}\\) |
+| **Amount of Substance** | mole | \\(\text{mol}\\) | \\([\text{mol}]\\) | Avogadro constant \\(N_A = 6.02214076 \times 10^{23}\text{ mol}^{-1}\\) |
+| **Luminous Intensity** | candela | \\(\text{cd}\\) | \\([\text{cd}]\\) | Luminous efficacy \\(K_{\text{cd}} = 683\text{ lm W}^{-1}\\) at \\(540 \times 10^{12}\text{ Hz}\\) |
+
+##### **B. Two Supplementary SI Quantities & Units**
+
+| Supplementary Quantity | Unit Name | Symbol | Mathematical Definition | Dimensions |
+| :--- | :--- | :--- | :--- | :--- |
+| **Plane Angle** (\\(\theta\\)) | radian | \\(\text{rad}\\) | \\(\theta = \frac{\text{Arc Length } (s)}{\text{Radius } (r)}\\) | \\([M^0 L^0 T^0]\\) (Dimensionless) |
+| **Solid Angle** (\\(\Omega\\)) | steradian | \\(\text{sr}\\) | \\(\Omega = \frac{\text{Intercepted Area } (A)}{r^2}\\) | \\([M^0 L^0 T^0]\\) (Dimensionless) |
+
+---
+
+#### 9. Dimensions of Base & Derived Quantities
+* Fundamental quantities have their own primary dimensions: \\([M^1], [L^1], [T^1], [I^1], [K^1], [\text{mol}^1], [\text{cd}^1]\\).
+* The dimension of any base quantity in any other base quantity is strictly **zero** (e.g., mass has zero dimension in length, time, etc.).
+* Supplementary quantities (radian, steradian) have **zero dimensions in all base quantities**.
+
+---
+
+#### 10. Fundamental Physical Constants Used for Unit Definitions
+* **Speed of Light (\\(c\\)):** \\(2.99792458 \times 10^8\text{ m/s}\\) (Exact)
+* **Planck Constant (\\(h\\)):** \\(6.62607015 \times 10^{-34}\text{ J}\cdot\text{s}\\)
+* **Elementary Charge (\\(e\\)):** \\(1.602176634 \times 10^{-19}\text{ C}\\)
+* **Avogadro Constant (\\(N_A\\)):** \\(6.02214076 \times 10^{23}\text{ mol}^{-1}\\)
+
+---
+
+#### 11. Structural Hierarchy Diagram
+
+```
+                       PHYSICAL QUANTITIES
+                                |
+        +-----------------------+-----------------------+
+        |                                               |
+FUNDAMENTAL (BASE) QUANTITIES                  DERIVED QUANTITIES
+(7 Independent Quantities:                 (Expressed as powers of base:
+ Length, Mass, Time, Current,               Speed, Force, Work, Pressure,
+ Temp, Amount, Lum. Intensity)              Charge, Potential, etc.)
+        |                                               |
+        +-----------------------+-----------------------+
+                                |
+                     SUPPLEMENTARY QUANTITIES
+                  (Dimensionless with units:
+                   Plane Angle, Solid Angle)
+```
+
+---
+
+#### 12. Applications
+1. **Coherent System of Units:** SI is a **coherent system**, meaning derived units are obtained by simple multiplication and division of base units without introducing numerical multiplying factors [21–22].
+2. **Standardization in Engineering & Industry:** Ensures inter-compatibility of scientific data, manufacturing dimensions, and electrical standards globally.
+
+---
+
+#### 13. Important H.C. Verma Concepts
+* **Non-Uniqueness of Base Quantities (HCV Sec 1.3):** The choice of base quantities is not unique. Different systems can select different sets of quantities as base quantities.
+* **Condition for an Invalid Base Set (HCV Ch 1, Obj I Q1):** A set of physical quantities **CANNOT** be chosen as a set of fundamental quantities if any one of them can be derived from the others.
+  * *Example:* The set \\((\text{Length}, \text{Time}, \text{Velocity})\\) **cannot** form a base set because \\(\text{Velocity} = \frac{\text{Length}}{\text{Time}}\\).
+  * The set \\((\text{Length}, \text{Mass}, \text{Velocity})\\) **can** form a valid base set because Mass is independent of Length and Velocity.
+
+---
+
+#### 14. Common Confusions
+
+| Concept A | Concept B | APPSC Distinction & Trap |
+| :--- | :--- | :--- |
+| **Base Unit** | **Derived Unit** | Base units are independently defined; derived units are formed by combining base units. |
+| **Base Set \\((\text{L}, \text{T}, \text{V})\\)** | **Base Set \\((\text{M}, \text{L}, \text{V})\\)** | \\((\text{L}, \text{T}, \text{V})\\) is **invalid** because \\(V = L/T\\). \\((\text{M}, \text{L}, \text{V})\\) is **valid** because \\(M\\) cannot be formed from \\(L\\) and \\(V\\). |
+| **Radian (\\(\text{rad}\\))** | **Radian Dimension** | Radian is a **unit**, but its dimensional formula is \\([M^0 L^0 T^0]\\). |
+
+---
+
+#### 15. APPSC Angle & Question Trends
+* **Testing Alternate Base Sets:** APPSC frequently asks questions like: *"If Force (\\(F\\)), Length (\\(L\\)), and Time (\\(T\\)) are taken as fundamental quantities, what is the dimension of Mass?"*
+* **Identification of Invalid Base Sets:** Selecting which combination of 3 quantities cannot serve as fundamental quantities.
+
+---
+
+#### 16. Worked Examples
+
+##### **Worked Example 1.2.1 (Testing Validity of a Base Set)**
+**Problem:** Can Force (\\(F\\)), Velocity (\\(V\\)), and Time (\\(T\\)) be chosen as a set of fundamental quantities in mechanics?
+
+* **Solution:**
+  * Check if any one of these three quantities can be derived from the remaining two.
+  * Acceleration \\(a = \frac{V}{T}\\).
+  * Force \\(F = \text{Mass} \times \text{Acceleration} = M \cdot \frac{V}{T} \implies M = \frac{F \cdot T}{V}\\).
+  * Mass is required to express Force. None of \\(F, V, T\\) can be expressed solely in terms of the other two without introducing Mass.
+  * Therefore, \\((F, V, T)\\) are mutually independent and **CAN** be chosen as a valid set of fundamental quantities [49–50].
+
+##### **Worked Example 1.2.2 (Alternate Base System - H.C. Verma Model)**
+**Problem (HCV Ch 1 Ex 5):** If Velocity (\\(V\\)), Time (\\(T\\)), and Force (\\(F\\)) were chosen as basic quantities, find the dimensions of Mass [49–50].
+
+* **Solution:**
+  * \\(\text{Force} = \text{Mass} \times \text{Acceleration} = \text{Mass} \times \frac{\text{Velocity}}{\text{Time}}\\) [49–50]
+  * \\(F = M \cdot V \cdot T^{-1}\\) [49–50]
+  * \\(M = F \cdot T \cdot V^{-1}\\)
+  * **Dimensions of Mass:** \\([M] = [F^1 T^1 V^{-1}]\\).
+
+---
+
+#### 17. Practice Numericals
+
+##### **Numerical 1 (Easy):**
+Express the SI derived unit of Surface Tension (\\(\text{N/m}\\)) purely in terms of fundamental SI units (\\(\text{kg}, \text{m}, \text{s}\\)).
+* **Solution:**
+  * \\(\text{Surface Tension } S = \frac{\text{Force}}{\text{Length}}\\)
+  * \\(\text{Unit of Force} = \text{kg} \cdot \text{m} \cdot \text{s}^{-2}\\)
+  * \\(\text{Unit of Surface Tension} = \frac{\text{kg} \cdot \text{m} \cdot \text{s}^{-2}}{\text{m}} = \text{kg} \cdot \text{s}^{-2}\\)
+  * **Final Answer:** \\(\text{kg s}^{-2}\\) (or \\(\text{kg/s}^2\\)).
+
+##### **Numerical 2 (Moderate - HCV Model):**
+If Momentum (\\(P\\)), Area (\\(A\\)), and Time (\\(T\\)) are taken as fundamental quantities, find the dimensional formula of Energy.
+* **Solution:**
+  * Let Energy \\(E \propto P^a A^b T^c\\).
+  * \\([E] = [M L^2 T^{-2}]\\) [31–32, 194]
+  * \\([P] = [M L T^{-1}]\\), \\([A] = [L^2]\\), \\([T] = [T^1]\\)
+  * \\([M L^2 T^{-2}] = [M L T^{-1}]^a [L^2]^b [T]^c = M^a L^{a+2b} T^{-a+c}\\)
+  * Equating exponents:
+    * \\(M: a = 1\\)
+    * \\(L: a + 2b = 2 \implies 1 + 2b = 2 \implies 2b = 1 \implies b = 1/2\\)
+    * \\(T: -a + c = -2 \implies -1 + c = -2 \implies c = -1\\)
+  * **Final Answer:** \\([E] = [P^1 A^{1/2} T^{-1}]\\).
+
+##### **Numerical 3 (APPSC Level):**
+If Density (\\(\rho\\)), Acceleration due to gravity (\\(g\\)), and Frequency (\\(\nu\\)) are taken as fundamental physical quantities, find the dimensional exponent of Density in the expression for Power.
+* **Solution:**
+  * Power \\(P = [M L^2 T^{-3}]\\).
+  * \\(\rho = [M L^{-3}]\\), \\(g = [L T^{-2}]\\), \\(\nu = [T^{-1}]\\).
+  * Let \\(P = \rho^a g^b \nu^c\\).
+  * \\([M L^2 T^{-3}] = [M L^{-3}]^a [L T^{-2}]^b [T^{-1}]^c = M^a L^{-3a+b} T^{-2b-c}\\)
+  * Equating exponent of \\(M\\): \\(a = 1\\).
+  * **Final Answer:** The dimensional exponent of Density (\\(\rho\\)) is **\\(1\\)**.
+
+---
+
+#### 18. APPSC Level MCQs
+
+##### **MCQ 1 (Conceptual - HCV Objective I Q1)**
+Which of the following sets **CANNOT** enter into the list of fundamental quantities in any system of units?
+(A) Length, Mass, and Velocity  
+(B) Length, Time, and Velocity  
+(C) Mass, Time, and Velocity  
+(D) Length, Time, and Mass  
+
+* **Answer:** **(B)**
+* **Explanation:** In option (B), \\(\text{Velocity} = \frac{\text{Length}}{\text{Time}}\\). Since velocity is directly derivable from length and time, these three quantities are not mutually independent and cannot form a base set.
+
+##### **MCQ 2 (Assertion-Reasoning)**
+* **Assertion (A):** Radian and Steradian are supplementary units in the SI system that possess no physical dimensions.
+* **Reason (R):** Supplementary quantities are defined as ratios of geometric quantities of the same dimension (Length/Length and Area/Length\\(^2\\)).
+
+(A) Both (A) and (R) are true and (R) is the correct explanation of (A).  
+(B) Both (A) and (R) are true but (R) is NOT the correct explanation of (A).  
+(C) (A) is true but (R) is false.  
+(D) (A) is false but (R) is true.  
+
+* **Answer:** **(A)**
+* **Explanation:** Both statements are true. Plane angle is \\(\frac{\text{arc}}{\text{radius}} = \frac{L}{L} = 1\\) (dimensionless) and Solid angle is \\(\frac{\text{area}}{r^2} = \frac{L^2}{L^2} = 1\\) (dimensionless).
+
+##### **MCQ 3 (Multiple Statement)**
+Consider the following statements regarding SI Base Units:
+1. The dimension of a base quantity in terms of any other base quantity is always zero.
+2. The fundamental units can be redefined in terms of universal physical constants. [25–26]
+3. Mass, length, time, and electric charge form the official 4 mechanical base quantities in SI.
+
+Which of the statements given above are **CORRECT**?
+(A) 1 and 2 only  
+(B) 2 and 3 only  
+(C) 1 and 3 only  
+(D) 1, 2, and 3  
+
+* **Answer:** **(A)**
+* **Explanation:** Statement 1 is correct. Statement 2 is correct (all SI base units were redefined in 2018/2019 using fixed universal constants) [25–26]. Statement 3 is incorrect because **Electric Current (Ampere)** is the base quantity, not Electric Charge (Coulomb is a derived unit \\(\text{C} = \text{A}\cdot\text{s}\\)).
+
+---
+
+#### 19. Active Recall & Evaluation Question
+
+To evaluate your understanding before moving to **Subtopic 1.3: SI Units, Multiples and Sub-multiples, Rules for Writing SI Units, Advantages of SI Units**:
+
+> **ACTIVE RECALL QUESTION 1.2 (Level: APPSC Moderate):**
+> 
+> 1. Why is **Electric Current** chosen as an SI base quantity instead of **Electric Charge**, even though charge is a more fundamental property of matter?
+> 2. If Force (\\(F\\)), Acceleration (\\(a\\)), and Time (\\(T\\)) are chosen as the fundamental physical quantities, derive the dimensional formula for **Mass** and **Length**.
+> 3. State whether the set \\((\text{Work}, \text{Force}, \text{Displacement})\\) can form a valid set of fundamental quantities. Justify your answer in one sentence.
+
+***
+
+*Respond with your answer to proceed to evaluation and Subtopic 1.3.*
